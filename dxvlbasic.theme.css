@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 1.0.0
+ * @version 1.0.1
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source about://about
@@ -78,24 +78,16 @@
 }
 /*topbar end*/
 /*smallchannels start*/
-.unread__2ea32 {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  left: auto;
-  right: 4px;
-  top: 16px;
-}
 .modeSelected__2ea32 .link__2ea32 {
   background-color: var(--brand-700)!important;
 }
 .link__2ea32 {
-  padding-left: 16px;
+  padding-left: 13px;
   border-radius: 0px!important;
 
   &::before {
     width: 1px;
-    left: 10px;
+    left: 7px;
     background-color: rgba(255, 255, 255, 0.3);
 
   }
@@ -107,7 +99,7 @@
   }
 
   .linkTop__2ea32 {
-    gap: 4px;
+    gap: 2px;
   }
 }
 
@@ -118,23 +110,23 @@
 .name__2ea32,
 .overflow__82b15 {
   font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2857142857142858;
+  font-weight: 550;
+  line-height: 1;
 }
 
 .wrapper__29444 {
   padding: var(--space-xxs) var(--space-xs);
-  padding-left: 4px;
+  padding-left: 2px;
   box-sizing: content-box;
 
   .mainContent__29444 {
     flex-direction: row-reverse !important;
     flex: none !important;
-    gap: 8px;
+    gap: 20px;
   }
 
   .icon__29444 {
-    scale: 1.25;
+    scale: 1.42;
   }
 }
 
@@ -154,7 +146,7 @@
   .link__2ea32 {
     padding-left: 20px!important;
   }
-}
+} /* has a compatability problem with betterfolders, and i like that one */
 /*smallchannels end*/
 /*channelpop start*/
 .sidebarList_c48ade:hover .containerDefault_c69b6d:hover {
