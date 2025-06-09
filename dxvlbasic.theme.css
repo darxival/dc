@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 1.0.1
+ * @version 1.0.2
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source about://about
@@ -53,7 +53,7 @@
   padding-left: 0px !important;
   position: fixed;
   left: 12px;
-  top: 22px;
+  top: 0px;
   background: transparent !important;
   height: var(--custom-app-top-bar-height) !important;
   min-height: 0px;
@@ -148,69 +148,6 @@
   }
 } /* has a compatability problem with betterfolders, and i like that one */
 /*smallchannels end*/
-/*channelpop start*/
-.sidebarList_c48ade:hover .containerDefault_c69b6d:hover {
-height: 30px !important;
-.unread__2ea32 {
-margin: 14px 0px;
-}
-.link__2ea32 {
-position: absolute;
-max-width: 50vw !important;
-}
-}
-.containerDefault_c69b6d,
-.containerDefault__29444 {
-max-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--space-xs)) !important;
-}
-.link__2ea32 {
-min-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--space-xs) * 2) !important;
-}
-.container__5b40b .containerDefault_c69b6d {
-max-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--space-xs)) !important;
-.link__2ea32 {
-min-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--space-xs) * 6) !important;
-}
-}
-.container_eff079,
-.sectionDivider__629e4,
-.refreshVoiceChannelsButton__29444 {
-max-width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--space-sm) * 2) !important;
-}
-.scroller__629e4::-webkit-scrollbar,
-.children__2ea32,
-.headerEllipseBackdrop_f37cb1,
-.headerEllipseForeground_f37cb1 {
-display: none;
-}
-.scroller__629e4 {
-pointer-events: none !important;
-width: calc(50vw - var(--custom-guild-list-width)) !important;
-}
-.sidebarList_c48ade:hover .scroller__629e4 {
-pointer-events: fill!important;
-}
-.sidebarList_c48ade,
-.sidebar_c48ade,
-.container__2637a,
-.content__99f8c,
-.nav__551b0 {
-overflow: visible !important;
-}
-.sidebar_c48ade {
-position: fixed !important;
-z-index: 5;
-height: calc(100% - var(--custom-app-top-bar-height));
-display: flex !important;
-flex-direction: row;
-overflow: visible !important;
-}
-
-.page_c48ade {
-margin-left: var(--custom-guild-sidebar-width);
-width: calc(100% - var(--custom-guild-sidebar-width)) !important;
-}
-/*channelpop end*/
 /*antiactive start*/
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
@@ -269,9 +206,6 @@ width: calc(100% - var(--custom-guild-sidebar-width)) !important;
     }
 }
 /*typingtop end*/
-/*.channelBottomBarArea_f75fb0>div {
-  margin: 0px 0px 0px 0px;
-} i do not remember what this is or what it did but if something broke in text add it*/
 /*detailtime start*/
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
@@ -345,7 +279,7 @@ span[class*="timestampInline_"] {
 /*dxvltopbuttons start*/
 /*yes, this is the only thing here i actually made completly myself*/
 .recentsIcon_c99c29,
-.anchor_edefb8,
+/* removing the help button got rid of badges so this would be where the help button element is */,
 .winButtons_c38106:before {
   display: none;
 }
@@ -388,4 +322,4 @@ span[class*="timestampInline_"] {
 .winButtons_c38106 > div:hover {
   background: rgba(255, 235, 235, 0.12);
 }
-/*rotation end*/
+/*dxvltopbuttons end*/
