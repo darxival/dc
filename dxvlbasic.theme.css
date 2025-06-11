@@ -1,10 +1,10 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 1.0.2
+ * @version 1.0.3
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
- * @source about://about
+ * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
 */
 
 
@@ -12,6 +12,7 @@
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css"); /*this makes the background of some elements blurry*/
 @import url("https://nspc911.github.io/themes/vencord/SettingsModal.theme.css"); /*this and the one following make the settings pannel better & blurry*/
 @import url("https://nspc911.github.io/themes/vencord/BlurrySettingsModal.theme.css");
+@import url("https://raw.githubusercontent.com/HeroOfDungeon/snippets/refs/heads/main/More%20Animations.css"); /*this makes the message options compact*/
 /* @import url("https://ukriu.github.io/cssCord/Other/blandProfile.css"); /*this gets rid of all decoration*/
 /* @import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css"); /*this makes profiles square and puts status around the pfp*/
 /*root setup*/
@@ -41,6 +42,9 @@
   --rs-phone-visible: none; /*remove to make visible!!*/
   --rs-phone-color: rgba(56, 212, 212, 0.65);
   /*radialstatus end*/
+  /*messageops start*/
+  --animation-speed: 0.2s;
+  /*messageops end*/
 }
 /*topbar start*/
 .title_c38106 {
@@ -53,12 +57,12 @@
   padding-left: 0px !important;
   position: fixed;
   left: 12px;
-  top: 0px;
+  top: 24px;
   background: transparent !important;
   height: var(--custom-app-top-bar-height) !important;
   min-height: 0px;
   border: none !important;
-  width: calc(100vw);
+  width: calc(91vw);
 }
 
 .followButton_f75fb0,
@@ -279,7 +283,7 @@ span[class*="timestampInline_"] {
 /*dxvltopbuttons start*/
 /*yes, this is the only thing here i actually made completly myself*/
 .recentsIcon_c99c29,
-/* removing the help button got rid of badges so this would be where the help button element is */,
+/*.icon__9293f, this removes help, inbox, and utilities?*/
 .winButtons_c38106:before {
   display: none;
 }
