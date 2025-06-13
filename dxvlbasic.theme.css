@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 1.0.3
+ * @version 1.0.4
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
@@ -152,12 +152,68 @@
   }
 } /* has a compatability problem with betterfolders, and i like that one */
 /*smallchannels end*/
+/*namepos start*/
+[class^="headerText"] {
+  display: inline-flex;
+}
+
+[class^="headerText"] > span:has([class^="roleIcon"]) {
+  order: 4;
+}
+
+[class^="headerText"] > span:has([class^="chipletContainerInner"])  {
+  order: 2;
+  margin: 0px;
+  margin-right: 4px;
+
+}
+
+[class^="headerText"] > span:is([class^="username"]) {
+  order: 3;
+}
+
+[class^="headerText"] > span[style="display: none;"] {
+  order: 5;
+}
+
+[class^="headerText"] > .vc-message-decorations-wrapper {
+  order: 6;
+}
+
+[class^="headerText"] > span:has(> [class^="newMemberBadge"]) {
+  order: 7;
+}
+
+[class^="headerText"] > span:is([class^="botTag"]) {
+  order: 1;
+  margin: 1.5px;
+  margin-right: 4px;
+}
+/*namepos end*/
 /*antiactive start*/
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
 }
 /*antiactive end*/
+/*smallmenu start*/
+.layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
+  margin: -6px;
+  .separator_c1e9c4 {
+    margin: 0px 0px !important;
+  }
+  .wrapper_f563df {
+    padding: 2px !important;
+  }
+  .item_c1e9c4{
+    min-height: 18px;
+    padding: 4px 8px;
+  }
+}
+.wrapper_f563df {
+  display: none;
+}
+/*smallmenu end*/
 /*typingtop start*/
 .visual-refresh {
     --custom-channel-textarea-text-area-height: 56px;
