@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 1.0.4
+ * @version 0.1.5
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
@@ -19,11 +19,11 @@
 :root {
   /*blurbg&sm start*/
   /*blurradius*/
-  --blrbg-blur-by: 2px;
-  --blrsm-blur-by: 2px;
+  --blrbg-blur-by: 1px;
+  --blrsm-blur-by: 1px;
   /*blurdimming*/
-  --blrbg-dimmness: 20;
-  --blrsm-dimmness: 20;
+  --blrbg-dimmness: 50;
+  --blrsm-dimmness: 50;
   /*blurbg&sm end*/
   /*radialstatus start*/
   --rs-small-spacing: 0.5px;
@@ -39,7 +39,7 @@
   --rs-offline-color: rgba(0, 0, 0, 0.65);
   --rs-streaming-color: rgba(103, 56, 212, 0.65);
   --rs-invisible-color: rgba(65, 65, 65, 0.35);
-  --rs-phone-visible: none; /*remove to make visible!!*/
+  --rs-phone-visible: none; /*blank to make visible!!*/
   --rs-phone-color: rgba(56, 212, 212, 0.65);
   /*radialstatus end*/
   /*messageops start*/
@@ -339,7 +339,9 @@ span[class*="timestampInline_"] {
 /*dxvltopbuttons start*/
 /*yes, this is the only thing here i actually made completly myself*/
 .recentsIcon_c99c29,
-/*.icon__9293f, this removes help, inbox, and utilities?*/
+/*.icon__9293f, this removes help, inbox, and utilities? confuses me, but whatever*/
+/*.trailing_c38106, this removes help, inbox, and window contorls? this is the one i want to mess with*/
+/*.anchor_edefb8, removes help and badges?? it's not even all the badges, only some??*/
 .winButtons_c38106:before {
   display: none;
 }
