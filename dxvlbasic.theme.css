@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 0.1.5
+ * @version 0.2.0
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
@@ -15,6 +15,7 @@
 @import url("https://raw.githubusercontent.com/HeroOfDungeon/snippets/refs/heads/main/More%20Animations.css"); /*this makes the message options compact*/
 /* @import url("https://ukriu.github.io/cssCord/Other/blandProfile.css"); /*this gets rid of all decoration*/
 /* @import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css"); /*this makes profiles square and puts status around the pfp*/
+
 /*root setup*/
 :root {
   /*blurbg&sm start*/
@@ -46,6 +47,7 @@
   --animation-speed: 0.2s;
   /*messageops end*/
 }
+
 /*topbar start*/
 .title_c38106 {
   display: none;
@@ -57,12 +59,12 @@
   padding-left: 0px !important;
   position: fixed;
   left: 12px;
-  top: 24px;
+  top: 22px;
   background: transparent !important;
   height: var(--custom-app-top-bar-height) !important;
   min-height: 0px;
   border: none !important;
-  width: calc(91vw);
+  width: calc(92vw);
 }
 
 .followButton_f75fb0,
@@ -80,6 +82,22 @@
 .topic__6ec1a {
   flex: none;
 }
+.visual-refresh {
+
+  .searchBar__97492 {
+    height: 28px;
+
+    .DraftEditor-root {
+      height: 100%;
+      line-height: 22px;
+    }
+
+    .icon__97492 {
+      width: 22px;
+      height: 22px;
+      padding-right: 4px;
+    }
+  }
 /*topbar end*/
 /*smallchannels start*/
 .modeSelected__2ea32 .link__2ea32 {
@@ -339,11 +357,13 @@ span[class*="timestampInline_"] {
 /*dxvltopbuttons start*/
 /*yes, this is the only thing here i actually made completly myself*/
 .recentsIcon_c99c29,
-/*.icon__9293f, this removes help, inbox, and utilities? confuses me, but whatever*/
-/*.trailing_c38106, this removes help, inbox, and window contorls? this is the one i want to mess with*/
-/*.anchor_edefb8, removes help and badges?? it's not even all the badges, only some??*/
 .winButtons_c38106:before {
   display: none;
+}
+/*this is what got rid of the help button, i am very proud of it, ignore that it's messy*/
+.anchor_edefb8 {
+  width: 0px;
+  height: 82px;
 }
 
 .winButton_c38106:nth-child(1) > svg {
