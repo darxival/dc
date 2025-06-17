@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 0.2.0
+ * @version 0.2.1
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
@@ -334,7 +334,7 @@ span[class*="timestampInline_"] {
 }
 .panels_c48ade:hover {
   width: 100%!important;
-  width: 285px!important;
+  width: 24vw!important;
   height: auto!important;
   .wrapper_e131a9 {
     height: auto!important;
@@ -355,7 +355,7 @@ span[class*="timestampInline_"] {
 }
 /*userpanelshrink end*/
 /*dxvltopbuttons start*/
-/*yes, this is the only thing here i actually made completly myself*/
+/*no, this is not the only thing here i actually made myself*/
 .recentsIcon_c99c29,
 .winButtons_c38106:before {
   display: none;
@@ -405,3 +405,33 @@ span[class*="timestampInline_"] {
   background: rgba(255, 235, 235, 0.12);
 }
 /*dxvltopbuttons end*/
+/*dxvlusrpanel start*//*i made this because of the only side effect to removing the help button :p*/
+.connectedAccountIcon_e6abe8{
+  width: 56px;
+  height: 56px;
+}
+
+.connectedAccountNameText_e6abe8 {
+  font-size: 32px;
+}
+
+.connectedAccountVerifiedIcon_e6abe8 {
+  margin-left: 8px;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+:where(.outer_c0bea0).user-profile-modal {
+  width: 75vw;
+  height: 85vh;
+  max-width: 1100px;
+}
+
+:where(.outer_c0bea0).user-profile-popout{
+  width: 24vw;
+}
+
+.mask__68edb circle {
+  display: none !important;
+}
+/*dxvluserpanel end*/
