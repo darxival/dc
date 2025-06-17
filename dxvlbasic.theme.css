@@ -1,7 +1,7 @@
 /**
  * @name dxvlbasic/base
  * @author darxival
- * @version 0.2.1
+ * @version 0.2.2
  * @invite khuFApaP6F
  * @description this is a base for the discord theme i want to make, it uses a lot of stuff from other people as of now though
  * @source https://github.com/darxival/dc/blob/main/dxvlbasic.theme.css
@@ -46,6 +46,9 @@
   /*messageops start*/
   --animation-speed: 0.2s;
   /*messageops end*/
+  /*dxvlmembers start*/
+  --custom-member-list-width: 15vw;
+  /*dxvlmembers end*/
 }
 
 /*topbar start*/
@@ -334,7 +337,7 @@ span[class*="timestampInline_"] {
 }
 .panels_c48ade:hover {
   width: 100%!important;
-  width: 24vw!important;
+  width: 18vw!important;
   height: auto!important;
   .wrapper_e131a9 {
     height: auto!important;
@@ -428,10 +431,46 @@ span[class*="timestampInline_"] {
 }
 
 :where(.outer_c0bea0).user-profile-popout{
-  width: 24vw;
+  width: 18vw;
+}
+
+.body_ce8328 {
+  gap: 4px;
+  padding: 0px 8px 4px
+}
+
+.inner_ab8609.clickable_ab8609 {
+  width: 16px;
+  height: 12px;
+  transition: 0.4s;
+}
+
+.inner_ab8609.clickable_ab8609:hover {
+  width: 8.6vw;
+  height: 24px;
+}
+
+.inner_ab8609 {
+  width: 8.6vw;
+  height: 12px;
+  transition: 0.4s;
+}
+
+.inner_ab8609:hover {
+  height: 108px;
 }
 
 .mask__68edb circle {
   display: none !important;
 }
 /*dxvluserpanel end*/
+/*dxvlmembers start*/
+.container_c8ffbb {
+  width: 65px;
+  transition: 0.7s;
+}
+
+.container_c8ffbb:hover {
+  width: var(--custom-member-list-width);
+}
+/*dxvlmembers end*/
